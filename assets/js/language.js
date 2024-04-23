@@ -42,6 +42,9 @@ const translations = {
       title: "Our principles and values",
       text: "Our company emphasizes innovative production techniques in an effort to ensure our products are safe and natural. We are proud of our reputation as one of the country's finest funchoza producers and are committed to continuing to delight our customers with our quality and attention to detail.",
     },
+    menu: {
+      title: "Delicious Recipe",
+    },
     testi: {
       testiText:
         "Welcome to a world of true flavor and quality with GDR-product: where every strand of Premium fuchoses is an expression of care and attention.",
@@ -49,6 +52,9 @@ const translations = {
     form: {
       title: "Contact Us",
       btnText: "Submit",
+    },
+    event: {
+      title: "From our blog",
     },
     socials: {
       facebook: "FACEBOOK",
@@ -104,6 +110,9 @@ const translations = {
       title: "Наши принципы и ценности",
       text: "Наша компания уделяет особое внимание инновационным технологиям производства, стремясь обеспечить безопасность и натуральность нашей продукции. Мы гордимся нашей репутацией одного из лучших производителей фунчозы в стране и готовы продолжать радовать наших клиентов своим качеством и вниманием к деталям.",
     },
+    menu: {
+      title: "Вкусный рецепт",
+    },
     testi: {
       testiText:
         "Приветствуем в мире истинного вкуса и качества с GDR-product: где каждая нить Premium fuchoses – это проявление заботы и внимания.",
@@ -111,6 +120,9 @@ const translations = {
     form: {
       title: "Связаться с нами",
       btnText: "Отправить",
+    },
+    event: {
+      title: "Из нашего блога ",
     },
     socials: {
       facebook: "ФЕЙСБУК",
@@ -166,6 +178,9 @@ const translations = {
       title: "Bizning printsiplarimiz va qadriyatlarimiz",
       text: "Kompaniyamiz mahsulotlarimizning xavfsizligi va tabiiyligini taʼminlashga intilib, innovatsion ishlab chiqarish texnologiyalariga alohida eʼtibor beradi. Biz mamlakatdagi eng yaxshi funchoza ishlab chiqaruvchilardan biri sifatidagi obro‘  - eʼtiborimiz bilan faxrlanamiz va sifatimiz va tafsilotlarga eʼtiborimiz bilan mijozlarimizni xursand qilishni davom ettirishga tayyormiz.",
     },
+    menu: {
+      title: "Mazali Retsept",
+    },
     testi: {
       testiText:
         "GDR-product bilan haqiqiy ta'm va sifat dunyosiga xush kelibsiz: bu erda har bir Premium fuchoses ipi g'amxo'rlik va e'tiborning namoyonidir.",
@@ -173,6 +188,9 @@ const translations = {
     form: {
       title: "Biz bilan bog'lanish",
       btnText: "Yuborish",
+    },
+    event: {
+      title: "Bizning blogimizdan",
     },
     socials: {
       facebook: "FACEBOOK",
@@ -215,11 +233,15 @@ const cardText = document.querySelectorAll(".features-card-text");
 // special
 const specialTitle = document.querySelector(".special-title");
 const specialText = document.querySelector(".special-text");
+// menu
+const menuTitle = document.querySelector(".menu-heading2");
 // testi
 const testiText = document.querySelector(".testi-text");
 // form
 const formTitle = document.querySelector(".reserv-form-title");
 const formBtnText = document.querySelectorAll(".form-btn-text");
+// event
+const eventTitle = document.querySelector(".event-heading2");
 // footer
 const footerLinkes = document.querySelectorAll(".footer-link");
 const footerTitle = document.querySelector(".footer-form");
@@ -262,12 +284,16 @@ const setLanguage = (lang) => {
     // special
     specialTitle.innerText = translations.en.special.title;
     specialText.innerText = translations.en.special.text;
+    // menu
+    menuTitle.innerText = translations.en.menu.title;
     // testi
     testiText.innerText = translations.en.testi.testiText;
     // form
     formTitle.innerText = translations.en.form.title;
     formBtnText[0].innerText = translations.en.form.btnText;
     formBtnText[1].innerText = translations.en.form.btnText;
+    // event
+    eventTitle.innerText = translations.en.event.title;
     // footer
     footerLinkes[0].innerText = translations.en.navbar[0];
     footerLinkes[1].innerText = translations.en.navbar[1];
@@ -318,12 +344,16 @@ const setLanguage = (lang) => {
     // special
     specialTitle.innerText = translations.ru.special.title;
     specialText.innerText = translations.ru.special.text;
+    // menu
+    menuTitle.innerText = translations.ru.menu.title;
     // testi
     testiText.innerText = translations.ru.testi.testiText;
     // form
     formTitle.innerText = translations.ru.form.title;
     formBtnText[0].innerText = translations.ru.form.btnText;
     formBtnText[1].innerText = translations.ru.form.btnText;
+    // event
+    eventTitle.innerText = translations.ru.event.title;
     // footer
     footerLinkes[0].innerText = translations.ru.navbar[0];
     footerLinkes[1].innerText = translations.ru.navbar[1];
@@ -374,12 +404,16 @@ const setLanguage = (lang) => {
     // special
     specialTitle.innerText = translations.uz.special.title;
     specialText.innerText = translations.uz.special.text;
+    // menu
+    menuTitle.innerText = translations.uz.menu.title;
     // testi
     testiText.innerText = translations.uz.testi.testiText;
     // form
     formTitle.innerText = translations.uz.form.title;
     formBtnText[0].innerText = translations.uz.form.btnText;
     formBtnText[1].innerText = translations.uz.form.btnText;
+    // event
+    eventTitle.innerText = translations.uz.event.title;
     // footer
     footerLinkes[0].innerText = translations.uz.navbar[0];
     footerLinkes[1].innerText = translations.uz.navbar[1];

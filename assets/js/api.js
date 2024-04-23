@@ -1,7 +1,10 @@
+import { eventRender, menuRender } from "./render.js";
 const formik = document.getElementById("form");
 const formSubscribe = document.getElementById("form-subscribe");
 const bot_id = "7092135193:AAH3klJM2Zbl1WrwRN16deORsvURSRdY0Xo";
 const chat_id = -1002130662695;
+const list = document.getElementById("grid-list");
+const listMenu = document.getElementById("grid-list-menu");
 // form
 formik.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -83,4 +86,23 @@ formSubscribe.addEventListener("submit", (e) => {
   e.target[0].value = "";
 });
 
-
+// event
+async function event() {
+  const eventFetch = await fetch("http://localhost:3300/blogs");
+  let datasorov = eventFetch;
+  if (datasorov.ok) {
+    let data = await datasorov.json();
+    eventRender(list, data);
+  }
+}
+event();
+// menu
+async function menu() {
+  const menuFetch = await fetch("http://localhost:3300/recipes");
+  let datasorov = menuFetch;
+  if (datasorov.ok) {
+    let data = await datasorov.json();
+    menuRender(listMenu, data);
+  }
+}
+menu();
