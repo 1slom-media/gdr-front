@@ -224,6 +224,7 @@ const formBtnText = document.querySelectorAll(".form-btn-text");
 const footerLinkes = document.querySelectorAll(".footer-link");
 const footerTitle = document.querySelector(".footer-form");
 const footerBtn = document.querySelectorAll(".footer-form-btn");
+const copiright = document.querySelector(".copyright");
 
 const setLanguage = (lang) => {
   if (lang === "en") {
@@ -279,6 +280,8 @@ const setLanguage = (lang) => {
     footerTitle.innerText = translations.en.footer.footerTitle;
     footerBtn[0].innerText = translations.en.footer.btn;
     footerBtn[1].innerText = translations.en.footer.btn;
+    copiright.innerHTML = `&copy; 2024 Premium-Funchose. All rights reserved. <a href="https://softwaresystem.uz/"
+    target="_blank" class="link">Software System Pro</a>`;
   }
   if (lang === "ru") {
     // hero
@@ -333,6 +336,8 @@ const setLanguage = (lang) => {
     footerTitle.innerText = translations.ru.footer.footerTitle;
     footerBtn[0].innerText = translations.ru.footer.btn;
     footerBtn[1].innerText = translations.ru.footer.btn;
+    copiright.innerHTML = `&copy; 2024 Премиум-Фунчоза. Все права защищены. <a href="https://softwaresystem.uz/"
+    target="_blank" class="link">Software System Pro</a>`;
   }
   if (lang === "uz") {
     // hero
@@ -387,5 +392,7 @@ const setLanguage = (lang) => {
     footerTitle.innerText = translations.uz.footer.footerTitle;
     footerBtn[0].innerText = translations.uz.footer.btn;
     footerBtn[1].innerText = translations.uz.footer.btn;
+    copiright.innerHTML = `&copy; 2024 Premium-Funchose. Barcha huquqlar himoyalangan. <a href="https://softwaresystem.uz/"
+    target="_blank" class="link">Software System Pro</a>`;
   }
 };
