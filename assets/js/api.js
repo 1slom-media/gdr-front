@@ -14,7 +14,7 @@ formik.addEventListener("submit", (e) => {
     message: e.target[2].value,
   };
 
-  fetch("http://localhost:3300/form", {
+  fetch("https://api.gdr-product.uz/form", {
     method: "POST",
     headers: {
       "Content-type": "application/json; charset=UTF-8",
@@ -88,7 +88,7 @@ formSubscribe.addEventListener("submit", (e) => {
 
 // event
 async function event() {
-  const eventFetch = await fetch("http://localhost:3300/blogs");
+  const eventFetch = await fetch("https://api.gdr-product.uz/blogs");
   let datasorov = eventFetch;
   if (datasorov.ok) {
     let data = await datasorov.json();
@@ -98,7 +98,7 @@ async function event() {
 event();
 // menu
 async function menu() {
-  const menuFetch = await fetch("http://localhost:3300/recipes");
+  const menuFetch = await fetch("https://api.gdr-product.uz/recipes");
   let datasorov = menuFetch;
   if (datasorov.ok) {
     let data = await datasorov.json();
