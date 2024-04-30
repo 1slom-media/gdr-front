@@ -1048,6 +1048,15 @@ body.nav-active {
   margin-block-end: 16px;
 }
 
+.service-title{
+  margin-bottom: 20px;
+}
+
+.service-text{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 .service .section-text {
   margin-block-end: 40px;
 }
@@ -2246,7 +2255,7 @@ textarea.input-field {
   }
 
   .service .grid-list li:nth-child(2n + 1) {
-    transform: translateY(-160px);
+    transform: translateY(-130px);
   }
 
   .service .section-text {

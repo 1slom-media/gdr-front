@@ -17,6 +17,10 @@ const translations = {
       title3: `Turn Dinner into a Taste Celebration!`,
       text3: `GDR-product: the best choice for your table.`,
     },
+    service: {
+      title: "Premium Funchoses: Unrivaled taste and quality",
+      text: "Discover the unique taste and flavor of our premium funchoses. The perfect choice for true gourmets.",
+    },
     about: {
       subtitle: "our story",
       title: "About us",
@@ -84,6 +88,10 @@ const translations = {
       text2: `Фунчоза для настоящих гурманов.`,
       title3: `Превратите Обед в Праздник Вкуса!`,
       text3: `GDR-product: лучший выбор для вашего стола.`,
+    },
+    service: {
+      title: "Premium Funchoses: Непревзойденный вкус и качество",
+      text: "Откройте для себя неповторимый вкус и аромат наших премиальных фунчоз. Идеальный выбор для истинных гурманов.",
     },
     about: {
       subtitle: "Наша история",
@@ -153,6 +161,10 @@ const translations = {
       title3: `Tushlikni lazzat bayramiga aylantiring!`,
       text3: `GDR-product: dasturxon uchun eng yaxshi tanlov.`,
     },
+    service: {
+      title: "Premium Funchoses: tengsiz ta'm va sifat",
+      text: "Bizning premium funchozamizning o'ziga xos ta'mi va xushbo'yligini kashf eting. Haqiqiy taom shinavandalari uchun mukammal tanlov.",
+    },
     about: {
       subtitle: "bizning hikoyamiz",
       title: "Biz Haqimizda",
@@ -221,6 +233,9 @@ const sliderTitle2 = document.getElementById("hero-slider-2");
 const sliderText2 = document.getElementById("hero-text-2");
 const sliderTitle3 = document.getElementById("hero-slider-3");
 const sliderText3 = document.getElementById("hero-text-3");
+// service
+const serviceTitle = document.querySelector(".service-title");
+const serviceText = document.querySelector(".service-text");
 // about
 const aboutSubTitle = document.querySelector(".about-subtitle");
 const aboutTitle = document.querySelector(".about-title");
@@ -266,6 +281,9 @@ const setLanguage = (lang) => {
     adress[0].innerText = translations.en.topbar.adress;
     adress[1].innerText = translations.en.topbar.adress;
     adress[2].innerText = translations.en.topbar.adress;
+    // service
+    serviceTitle.innerText = translations.en.service.title;
+    serviceText.innerText = translations.en.service.text;
     // about
     aboutSubTitle.innerText = translations.en.about.subtitle;
     aboutTitle.innerText = translations.en.about.title;
@@ -326,6 +344,9 @@ const setLanguage = (lang) => {
     adress[0].innerText = translations.ru.topbar.adress;
     adress[1].innerText = translations.ru.topbar.adress;
     adress[2].innerText = translations.ru.topbar.adress;
+     // service
+     serviceTitle.innerText = translations.ru.service.title;
+     serviceText.innerText = translations.ru.service.text;
     // about
     aboutSubTitle.innerText = translations.ru.about.subtitle;
     aboutTitle.innerText = translations.ru.about.title;
@@ -386,6 +407,9 @@ const setLanguage = (lang) => {
     adress[0].innerText = translations.uz.topbar.adress;
     adress[1].innerText = translations.uz.topbar.adress;
     adress[2].innerText = translations.uz.topbar.adress;
+     // service
+     serviceTitle.innerText = translations.uz.service.title;
+     serviceText.innerText = translations.uz.service.text;
     // about
     aboutSubTitle.innerText = translations.uz.about.subtitle;
     aboutTitle.innerText = translations.uz.about.title;
